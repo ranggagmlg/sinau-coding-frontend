@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contoh Flexbox</title>
+
+    <style>
+        .fl-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fl-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box {
+            padding: 16px;
+            background-color: grey;
+            box-shadow: 3px 3px 5px #c4c4c4;
+            width: 300px;
+            min-height: 300px;
+        }
+
+        .fl-flex-1 {
+            flex: 1;
+        }
+
+        .fl-flex-2 {
+            flex: 2;
+        }
+
+        .fl-flex-3 {
+            flex: 3;
+        }
+
+        .jc {
+            justify-content: center;
+        }
+
+        .ac {
+            align-items: center;
+        }
+        
+        .je {
+            justify-content: flex-end;
+        }
+
+        .ae {
+            align-items: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contoh flexbox (flexbox-row menampilkan secara horizontal (menyamping))</h1>
+    <div class="fl-row">
+        <div class="box">
+            BOX 1
+        </div>
+        <div class="box">
+            BOX 2
+        </div>
+        <div class="box">
+            BOX 3
+        </div>
+    </div>
+
+    <h1>Contoh flexbox (flexbox-col menampilkan secara vertical (menurun))</h1>
+    <div class="fl-col">
+        <div class="box">
+            BOX 1
+        </div>
+        <div class="box">
+            BOX 2
+        </div>
+        <div class="box">
+            BOX 3
+        </div>
+    </div>
+
+    <h1>Contoh flexbox dengan setiap item (box) nya dengan nilai flex = 1</h1>
+    <div class="fl-row">
+        <div class="box fl-flex-1">
+            BOX 1
+        </div>
+        <div class="box fl-flex-1">
+            BOX 2
+        </div>
+        <div class="box fl-flex-1">
+            BOX 3
+        </div>
+    </div>
+
+    <h1>Contoh flexbox dengan setiap item (box) nya dengan nilai flex bervariasi</h1>
+    <div class="fl-row">
+        <div class="box fl-flex-1">
+            BOX 1
+        </div>
+        <div class="box fl-flex-2">
+            BOX 2
+        </div>
+        <div class="box fl-flex-3">
+            BOX 3
+        </div>
+    </div>
+
+    <h1>Contoh flexbox (flexbox-row <i>align-items</i> center)</h1>
+    <div class="fl-row">
+        <div class="ac box fl-row">
+            <p style="margin-right: 15px;">fl row disini. align items center</p>
+            <p>BOX 1</p>
+        </div>
+        <div class="ac box fl-row">
+            <p style="margin-right: 15px;">fl row disini. align items center</p>
+            <p>BOX 2</p>
+        </div>
+        <div class="ac box fl-row">
+            <p style="margin-right: 15px;">fl row disini. align items center</p>
+            <p>BOX 3</p>
+        </div>
+    </div>
+
+    <h1>Contoh flexbox (flexbox-col <i>align-items</i> center)</h1>
+    <div class="fl-row">
+        <div class="ac box fl-col">
+            <p style="margin-right: 15px;">fl col disini. align items center</p>
+            <p>BOX 1</p>
+        </div>
+        <div class="ac box fl-col">
+            <p style="margin-right: 15px;">fl col disini. align items center</p>
+            <p>BOX 2</p>
+        </div>
+        <div class="ac box fl-col">
+            <p style="margin-right: 15px;">fl col disini. align items center</p>
+            <p>BOX 3</p>
+        </div>
+    </div>
+</body>
+
+</html>

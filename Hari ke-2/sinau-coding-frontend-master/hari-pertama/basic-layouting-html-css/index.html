@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layouting web sederhana dengan html dan css</title>
+
+    <style>
+        /* css reset */
+        html,
+        body,
+        div {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* header */
+        #header {
+            background-color: black;
+            padding: 18px;
+            margin: auto;
+        }
+
+        #header p {
+            color: white;
+            margin: 16px 0;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        /* navigation */
+        #nav {
+            background-color: grey;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav ul li {
+            padding: 15px 20px;
+            display: inline-block;
+            border-right: 1px solid black;
+        }
+
+        #nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* content */
+        #content-wrapper {
+            display: block;
+            overflow: auto;
+        }
+
+        /* main-content (kiri) */
+        #content-wrapper #main-content {
+            width: 70%;
+            float: left;
+            box-sizing: border-box;
+            padding: 16px;
+        }
+
+        /* main-content (kiri) post-item */
+        #content-wrapper #main-content .post-item {
+            display: block;
+            overflow: auto;
+            border-bottom: 1px solid grey;
+            padding: 15px 0;
+        }
+
+        /* post image */
+        #content-wrapper #main-content .post-item .post-image {
+            width: 30%;
+            height: auto;
+            float: left;
+            box-sizing: border-box;
+            padding-right: 15px;
+        }
+
+        /* image post image */
+        #content-wrapper #main-content .post-item .post-image img {
+            width: 100%;
+        }
+
+        /* post-content */
+        #content-wrapper #main-content .post-item .post-content {
+            width: 70%;
+            float: left;
+        }
+
+        #content-wrapper #main-content .post-item .post-content p {
+            font-size: 14px;
+        }
+
+        #content-wrapper #main-content .post-item .post-content a {
+            text-decoration: none;
+            color: orange;
+        }
+
+        #content-wrapper #main-content .post-item .post-content h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* sidebar (kanan) */
+        #content-wrapper #sidebar {
+            width: 30%;
+            float: left;
+            background-color: gainsboro;
+            box-sizing: border-box;
+            padding: 16px;
+        }
+
+        #content-wrapper #sidebar p {
+            margin-top: 0;
+            border-bottom: 1px solid black;
+        }
+
+        #content-wrapper #sidebar-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #content-wrapper #sidebar-links ul li {
+            margin-bottom: 15px;
+        }
+
+        #content-wrapper #sidebar-links ul li a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        #footer {
+            background-color: black;
+        }
+
+        #footer p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <div id="header">
+        <p>HTML 5</p>
+    </div>
+
+    <!-- nav -->
+    <div id="nav">
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </div>
+
+    <!-- konten -->
+    <div id="content-wrapper">
+        <!-- konten kiri -->
+        <div id="main-content">
+            <div class="post-item">
+                <div class="post-image">
+                    <img src="download.jpg" alt="Gambar">
+                </div>
+                <div class="post-content">
+                    <h4>Lorem ipsum</h4>
+                    <p>
+                        Dolor incididunt aute nisi deserunt sunt ad laborum aute et aliquip consequat magna. Lorem
+                        excepteur magna occaecat aute excepteur cillum quis ut.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="post-item">
+                <div class="post-image">
+                    <img src="download.jpg" alt="Gambar">
+                </div>
+                <div class="post-content">
+                    <h4>Lorem ipsum</h4>
+                    <p>
+                        Dolor incididunt aute nisi deserunt sunt ad laborum aute et aliquip consequat magna. Lorem
+                        excepteur magna occaecat aute excepteur cillum quis ut.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- sidebar kanan -->
+        <div id="sidebar">
+            <p><b>Sidebar Links</b></p>
+            <div id="sidebar-links">
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </div>
+
+            <p><b>Other widgets</b></p>
+            <div id="sidebar-description">
+                Aliqua aute minim sint veniam esse cillum dolore dolor elit.
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <p>Copyright <span>your site</span>. All right reserved</p>
+    </div>
+</body>
+
+</html>

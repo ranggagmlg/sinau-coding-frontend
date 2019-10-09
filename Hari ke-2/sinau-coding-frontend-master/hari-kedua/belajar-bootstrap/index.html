@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Belajar bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .main-content,
+        .main-conte8nt .col-8,
+        .main-content .col-4 {
+            min-height: 500px;
+        }
+
+        .main-content .col-4 {
+            background-color: #dbdbdb;
+        }
+
+        .main-content .media {
+            border-bottom: 1px solid grey;
+            padding: 15px;
+        }
+
+        .main-content .media a {
+            color: orange;
+        }
+
+        .main-content .media img {
+            width: 150px;
+            margin-right: 15px;
+        }
+
+        .jumbotron {
+            background-color: black;
+            margin-bottom: 0;
+        }
+
+        .jumbotron .container-fluid {
+            padding: 0 32px;
+        }
+
+        .jumbotron h1,
+        .jumbotron p {
+            color: white;
+        }
+
+        .nav-container {
+            padding: 0 20px;
+            background-color: #c4c4c4;
+        }
+
+        .nav a {
+            color: black;
+        }
+
+        .sidebar-links {
+            padding: 16px;
+        }
+
+        .sidebar-links h5 {
+            margin-bottom: 6px !important;
+        }
+        
+        .col-4 h5 {
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid grey;
+        }
+
+        .sidebar-links h5 {
+            margin-bottom: 24px;
+        }
+
+        .sidebar-links ul li {
+            background-color: transparent;
+            padding-left: 0;
+            border: none;
+        }
+
+        .sidebar-links ul li a {
+            color: orange;
+        }
+
+        .sidebar-widgets {
+            padding: 0 16px 16px;
+        }
+
+        .footer {
+            background-color: black;
+            margin: 0;
+        }
+
+        .footer p {
+            padding: 16px 0;
+            text-align: center;
+            color: white;
+            margin-bottom: 0;
+        }
+
+        .footer p span {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <h1 class="display-4">HTML 5</h1>
+            <p class="lead">
+                Sint voluptate consequat anim ipsum proident sint reprehenderit esse fugiat aliqua ut duis quis
+            </p>
+        </div>
+    </div>
+
+    <div class="nav-container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content container-fluid">
+        <div class="row">
+            <div class="col-8">
+                <div class="media">
+                    <img class="align-self-start" src="images/download.jpg" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Media heading</h5>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                        <a href="#">Read more</a>
+
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="align-self-start" src="images/download.jpg" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Media heading</h5>
+                        <p>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </p>
+                        <a href="#">Read more</a>
+
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="align-self-start" src="images/download.jpg" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Media heading</h5>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </p>
+                        <a href="#">Read more</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="sidebar-links">
+                    <h5>Sidebar links</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Link 2</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Link 3</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widgets">
+                    <h5>Other Widgets</h5>
+                    <p>Aliqua minim ipsum id nulla sunt cupidatat. Officia sint deserunt consequat ex. Ea cupidatat
+                        reprehenderit elit id veniam in.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer row">
+        <div class="col-12">
+            <p>Copyright <span>your site</span>. All right reserved</p>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>
