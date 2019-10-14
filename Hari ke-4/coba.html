@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        // var cars = [];
+        // var car = {
+        //     merk: "Esemka"
+        // };
+
+      
+        // cars.push (car); 
+
+        // cars.push ({
+        //     merk: "Absen"
+        // })
+
+      var pegawai = [{nama: "Pawiro", umur: 20, gender: "Pria"}, {nama: "Roy", umur: 21, gender: "Pria"}];
+        var pegawaiMuda = pegawai.filter(function(item) {
+            return item.umur<21;
+        });
+
+        console.log ("Sebelum filter:", pegawai);
+        console.log ("Hasil filter", pegawaiMuda);
+
+
+
+
+        // console.log ("Hasil Tambah:", cars);
+
+        // console.log ("Hasil Tambah:", JSON.stringify (cars));  
+    </script>
+</body>
+
+ </html>
