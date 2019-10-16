@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<div id="app">
+    <!-- <h1>{{message}}</h1> -->
+    <button v-on:click="ClickCounter">Klik</button>
+    <p>{{counter}} times</p>
+
+    <input v-model="inputText">
+    {{inputText}}
+    <input type="checkbox" v-model=>
+</div>
+
+<head>
+    <title>Percobaan Vue</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            // options
+            el: "#app",
+            data: {
+                counter: 0
+            },
+            methods: {
+                ClickCounter () {
+                    this.counter+=1;            
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
